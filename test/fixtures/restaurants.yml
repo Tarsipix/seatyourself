@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  address: MyString
+  phone: MyString
+  photo_url: MyString
+  category_id: 1
+  capacity: 1
+  open_from: 2014-04-17 16:41:32
+  open_to: 2014-04-17 16:41:32
+
+two:
+  name: MyString
+  description: MyText
+  address: MyString
+  phone: MyString
+  photo_url: MyString
+  category_id: 1
+  capacity: 1
+  open_from: 2014-04-17 16:41:32
+  open_to: 2014-04-17 16:41:32
