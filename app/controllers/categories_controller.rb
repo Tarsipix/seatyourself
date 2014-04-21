@@ -10,4 +10,9 @@ class CategoriesController < ApplicationController
 
   def destroy
   end
+
+  private
+  def category_params
+    params.require(:restaurant).permit(:name)
+  end  
 end

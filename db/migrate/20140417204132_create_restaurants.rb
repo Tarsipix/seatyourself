@@ -7,7 +7,7 @@ class CreateRestaurants < ActiveRecord::Migration
       t.string :phone
       t.string :photo_url
       t.integer :capacity
-      t.time :open_from
+      t.time :open_from # might be better to create hours of operation model since hours can be different everyday of the week
       t.time :open_to
 
       t.integer :category_id

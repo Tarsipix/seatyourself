@@ -15,11 +15,12 @@ Seatyourself::Application.routes.draw do
   # get "restaurants/edit"
 
   root 'restaurants#index'
-  resources :categories do
-    resources :restaurants do
-      resources :reservations
-    end
+  # resources :categories
+  
+  resources :restaurants do
+    resources :reservations
   end
+  
 
   resources :users, :only => [:new, :create]
   resources :sessions, :only => [:new, :create, :destroy]
