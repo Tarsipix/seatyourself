@@ -6,11 +6,12 @@ class CreateRestaurants < ActiveRecord::Migration
       t.string :address
       t.string :phone
       t.string :photo_url
-      t.integer :category_id
-      t.integer :owner_id
       t.integer :capacity
       t.time :open_from
       t.time :open_to
+
+      t.integer :category_id
+      t.integer :owner_id # this assumes a restaurant belongs to one owner
 
       t.timestamps
     end
