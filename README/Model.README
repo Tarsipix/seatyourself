@@ -3,13 +3,14 @@ Restaurant
 ————————————————
 
 has_many :reservations
-has_many :users, :through => :reservations
+has_many :customers, :through => :reservations
 belongs_to :category
-belongs_to :user
+belongs_to :owner
 
 name :string
 description :text
 category_id :integer
+owner_id :integer
 capacity :integer
 open_from :time
 open_to :time
@@ -21,19 +22,20 @@ photo_url :string
 + pricing
 + menu
 
+
 ————————————————
 User
 ————————————————
 name :string
 email :string
 password_digest :string
+user_type :string
+points :integer
 
 ————————
 
 Customer < User
 has_many :reservations
-
-points :integer
 
 Owner < User
 has_many :restaurants
