@@ -1,4 +1,13 @@
 Seatyourself::Application.routes.draw do
+  root 'restaurant#index'
+  resources :restaurants
+  resources :users
+
+  # categories
+  # sessions
+  # reservation nested inside restaurant
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

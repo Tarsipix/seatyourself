@@ -1,0 +1,94 @@
+----------------------------
+User Stories
+----------------------------
+
+As a user...
+
+...I am presented with a list of restaurants on the homepage.
+...I can sign up, login, and logout.
+...on the page for a restaurant I can make a reservation if I am logged in.
+...I can go to a page to see a list of the reservations I’ve booked.
+...I can go to a page to see the list of restaurants sorted by cuisines.
+
+----------------------------
+User Stories
+----------------------------
+
+At this stage, a useful tool is to write user stories. Here are some user stories we might write for Seat Yourself.
+
+As a visitor, I want to see a directory of the restaurants available.
+As a visitor, when I click on a restaurant, I want to be able to see:
+address
+neighbourhood
+price range
+summary
+menu
+a list of available timeslots
+
+As a visitor, I want to sign up for a customer account so that I can make reservations online.
+As a customer, I want to be able to make a reservation online.
+As a customer, I want to receive loyalty points when I make a reservation.
+As a customer, I want to see my loyalty points in my account profile.
+As a customer, I want to receive an email confirmation after I've made a reservation.
+As the restaurant owner, I want to see the list of the weeks reservations.
+As the restaurant owner, I want to see my customer list with how many points each person has and how much they have spent online.
+As a visitor, I would like to be able to view restaurants based on their cuisine category (e.g. Italian). This can be down with a drop-down menu using collection_select.
+A restaurant can only be open from 11am - 8pm, 7 days a week.
+A restaurant can only hold 100 people in any given time slot.
+A reservation can be for a party of 2 to 20 people.
+
+
+----------------------------
+Setting up your factories.
+----------------------------
+
+Create a factory for a category
+Create a factory for a user
+Create a factory for a restaurant, if it belongs to anything, please make that association in your factory
+Create a factory for a reservation, if it belongs to anything, please make that association in your factory
+Reservation Tests
+
+When a restaurant is full, it should not be available for reservations
+A user should not be able to make a reservation outside of operating hours
+
+----------------------------
+User Tests
+----------------------------
+
+A user's name is required
+A user's email is required
+A user's password and password_confirmation are required
+A user's password_confirmation must match password
+An unsafe user password should not authenticate
+A safe user password should authenticate
+Two users cannot have the same email
+
+----------------------------
+Category Tests
+----------------------------
+
+A category should have a name
+
+----------------------------
+Restaurant Tests
+----------------------------
+
+A restaurant must have a name
+A restaurant must have an address
+A restaurant must have a phone number
+A restaurant must have a picture
+A restaurant must have a description
+A restaurant must belong to a category
+A restaurant must not be able to accept more people than it's capacity
+
+
+
+----------------------------
+Stretch Assignments:
+----------------------------
+
+As a stretch you can implement:
+
+Order online for delivery
+Menu items are shown in four categories: Appetizers, Entrées, Drinks, and Desserts.
+As a visitor, I can search for restaurants based upon geographic proximity (try using Geocoder)

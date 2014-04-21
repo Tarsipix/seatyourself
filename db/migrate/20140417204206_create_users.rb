@@ -5,6 +5,8 @@ class CreateUsers < ActiveRecord::Migration
       t.integer :points
       t.string :email
       t.string :password_digest
+      t.integer :restaurant_id
+      t.string :user_type
 
       t.timestamps
     end

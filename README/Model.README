@@ -1,0 +1,60 @@
+————————————————
+Restaurant
+————————————————
+
+has_many :reservations
+has_many :users, :through => :reservations
+belongs_to :category
+belongs_to :user
+
+name :string
+description :text
+category_id :integer
+capacity :integer
+open_from :time
+open_to :time
+
+address :string
+phone :string
+photo_url :string
+
++ pricing
++ menu
+
+————————————————
+User
+————————————————
+name :string
+email :string
+password_digest :string
+
+————————
+
+Customer < User
+has_many :reservations
+
+points :integer
+
+Owner < User
+has_many :restaurants
+
+————————————————
+Reservation
+————————————————
+belongs_to customer
+belongs_to restaurant
+
+time :datetime
+customer_id :integer
+restaurant_id :integer
+party_size :integer
+
+min_seats :integer
+max_seats :integer
+
+————————————————
+Category
+————————————————
+has_many :restaurants
+
+name :string

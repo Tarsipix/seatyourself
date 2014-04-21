@@ -7,6 +7,7 @@ class CreateRestaurants < ActiveRecord::Migration
       t.string :phone
       t.string :photo_url
       t.integer :category_id
+      t.integer :owner_id
       t.integer :capacity
       t.time :open_from
       t.time :open_to
