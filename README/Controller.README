@@ -1,0 +1,109 @@
+Sun Apr 20 10:28 pm seatyourself (master *) $ rails g controller restaurants index show new edit
+      create  app/controllers/restaurants_controller.rb
+       route  get "restaurants/edit"
+       route  get "restaurants/new"
+       route  get "restaurants/show"
+       route  get "restaurants/index"
+      invoke  erb
+      create    app/views/restaurants
+      create    app/views/restaurants/index.html.erb
+      create    app/views/restaurants/show.html.erb
+      create    app/views/restaurants/new.html.erb
+      create    app/views/restaurants/edit.html.erb
+      invoke  test_unit
+      create    test/controllers/restaurants_controller_test.rb
+      invoke  helper
+      create    app/helpers/restaurants_helper.rb
+      invoke    test_unit
+      create      test/helpers/restaurants_helper_test.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/restaurants.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/restaurants.css.scss
+Sun Apr 20 10:33 pm seatyourself (master *) $ rails g controller users new create
+      create  app/controllers/users_controller.rb
+       route  get "users/create"
+       route  get "users/new"
+      invoke  erb
+      create    app/views/users
+      create    app/views/users/new.html.erb
+      create    app/views/users/create.html.erb
+      invoke  test_unit
+      create    test/controllers/users_controller_test.rb
+      invoke  helper
+      create    app/helpers/users_helper.rb
+      invoke    test_unit
+      create      test/helpers/users_helper_test.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/users.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/users.css.scss
+Sun Apr 20 10:34 pm seatyourself (master *) $ rails g controller sessions new create destroy
+      create  app/controllers/sessions_controller.rb
+       route  get "sessions/destroy"
+       route  get "sessions/create"
+       route  get "sessions/new"
+      invoke  erb
+      create    app/views/sessions
+      create    app/views/sessions/new.html.erb
+      create    app/views/sessions/create.html.erb
+      create    app/views/sessions/destroy.html.erb
+      invoke  test_unit
+      create    test/controllers/sessions_controller_test.rb
+      invoke  helper
+      create    app/helpers/sessions_helper.rb
+      invoke    test_unit
+      create      test/helpers/sessions_helper_test.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/sessions.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/sessions.css.scss
+Sun Apr 20 10:38 pm seatyourself (master *) $ rails g controller reservations show new edit destroy
+      create  app/controllers/reservations_controller.rb
+       route  get "reservations/destroy"
+       route  get "reservations/edit"
+       route  get "reservations/new"
+       route  get "reservations/show"
+      invoke  erb
+      create    app/views/reservations
+      create    app/views/reservations/show.html.erb
+      create    app/views/reservations/new.html.erb
+      create    app/views/reservations/edit.html.erb
+      create    app/views/reservations/destroy.html.erb
+      invoke  test_unit
+      create    test/controllers/reservations_controller_test.rb
+      invoke  helper
+      create    app/helpers/reservations_helper.rb
+      invoke    test_unit
+      create      test/helpers/reservations_helper_test.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/reservations.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/reservations.css.scss
+Sun Apr 20 10:41 pm seatyourself (master *) $ rails g controller categories show new edit destroy
+      create  app/controllers/categories_controller.rb
+       route  get "categories/destroy"
+       route  get "categories/edit"
+       route  get "categories/new"
+       route  get "categories/show"
+      invoke  erb
+      create    app/views/categories
+      create    app/views/categories/show.html.erb
+      create    app/views/categories/new.html.erb
+      create    app/views/categories/edit.html.erb
+      create    app/views/categories/destroy.html.erb
+      invoke  test_unit
+      create    test/controllers/categories_controller_test.rb
+      invoke  helper
+      create    app/helpers/categories_helper.rb
+      invoke    test_unit
+      create      test/helpers/categories_helper_test.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/categories.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/categories.css.scss

@@ -1,4 +1,21 @@
 Seatyourself::Application.routes.draw do
+  get "categories/show"
+  get "categories/new"
+  get "categories/edit"
+  get "categories/destroy"
+  get "reservations/show"
+  get "reservations/new"
+  get "reservations/edit"
+  get "reservations/destroy"
+  get "sessions/new"
+  get "sessions/create"
+  get "sessions/destroy"
+  get "users/new"
+  get "users/create"
+  get "restaurants/index"
+  get "restaurants/show"
+  get "restaurants/new"
+  get "restaurants/edit"
   root 'restaurant#index'
   resources :restaurants
   resources :users
